@@ -1,0 +1,88 @@
+<!doctype html>
+
+
+<html class="no-js" lang="en" dir="ltr">
+    <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+
+  <ul class="dropdown menu" data-dropdown-menu>
+    <li class="menu-text">Welcome to My Site!</li>
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="bio.html">Bio</a></li>
+    <li><a href="redesign.html">Redesign</a></li>
+    <li><a href="quotes.html">Quotes</a></li>
+</ul>
+
+  <div class="top-bar-right">
+
+  </div>
+</div>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolie's Landing Page</title>
+      <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+    <!-- End Top Bar -->
+
+    <div class="callout large primary">
+      <div class="row column text-center">
+        <h1>Jolie Baskett</h1>
+      </div>
+    </div>
+
+    <div class="row" id="content">
+      <div class="medium-8 columns">
+        <div class="blog-post">
+
+            <img class="thumbnail" src="images/jolie.jpg">
+
+            <section id="time">
+Welcome to my landing page. I just wanted to say:
+<span id="greeting">hello!</span>
+</section>
+
+            <script type="text/javascript">
+
+var myDate = new Date();
+var myHour = myDate.getHours();
+
+/* the line above creates a Date() object in the browser and assigns it to the variable called myDate */
+
+if ( myHour > 12 ) {
+    document.getElementById('greeting').innerHTML = "Good Afternoon!";
+}
+    if ( myHour < 12 )
+    {
+       document.getElementById('greeting').innerHTML = "Good Morning!";
+    }
+        if ( myHour > 18 )
+     {
+       document.getElementById('greeting').innerHTML = "Good Evening!";
+    }
+    else  /* the hour is not between 0 and 24, so something is wrong */
+    {
+        document.getElementById('greeting').innerHTML = "I'm not sure what time it is!";
+    }
+</script>
+
+     <script>
+console.log("test");
+document.getElementById('test').onclick = function(){console.log("hello")};
+console.log("test");
+</script>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+            
+  </body>
+</html>
